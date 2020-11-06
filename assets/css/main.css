@@ -1793,7 +1793,8 @@ input, select, textarea {
 			color: #777;
 			font-size: 1.75em;
 			font-weight: 700;
-			margin-top: -0.75em;
+			margin-top: -0.5em;
+			margin-bottom: 0.5em;
 		}
 
 /* Form */
@@ -2206,6 +2207,9 @@ input, select, textarea {
 
 			.image.main img {
 				border-radius: 0;
+				filter: blur(2px);
+				outline: none;
+				z-index: 0;
 			}
 
 /* List */
@@ -3104,6 +3108,10 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+			#one .image.main .title.name {
+				display: none;
+			}
+
 	}
 
 /* Small */
@@ -3313,4 +3321,21 @@ input, select, textarea {
 				padding: 0;
 			}
 
+	}
+
+	#one .image.main .title.name {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 1px solid white;
+		box-shadow: -2px -1px orangered;
+		color: white;
+		font-size: 25px;
+		padding: 15px;
+		z-index: 1;
+	}
+
+	#header #logo{
+		font-size: 22px;
 	}
