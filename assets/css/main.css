@@ -2207,7 +2207,7 @@ input, select, textarea {
 
 			.image.main img {
 				border-radius: 0;
-				filter: blur(2px) !important; 
+				/* filter: blur(2px) !important;  */
 				z-index: 0 !important;
 			}
 
@@ -2217,10 +2217,11 @@ input, select, textarea {
 				left: 50%;
 				transform: translate(-50%, -50%);
 				border: 1px solid white;
-				box-shadow: -2px -1px orangered;
+				border-radius: 20px;
+				box-shadow: -2px -1px #4acaa8;
 				color: white;
 				font-size: 25px;
-				padding: 15px;
+				padding: 12px;
 				z-index: 1;
 			}
 		
@@ -3056,7 +3057,7 @@ input, select, textarea {
 			}
 
 				#titleBar .title {
-					color: #fff;
+					color: red;
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -3069,6 +3070,13 @@ input, select, textarea {
 					#titleBar .title a {
 						border: 0;
 						text-decoration: none;
+					}
+
+					#titleBar .title .drawing {
+						display: block;
+						width: 30px;
+						height: 30px;
+						border: 1px solid white;
 					}
 
 				#titleBar .toggle {
@@ -3125,7 +3133,8 @@ input, select, textarea {
 			}
 
 			#one .image.main .title.name {
-				display: none;
+				font-size: 20px;
+				transition: 700ms ease-in;
 			}
 
 	}
