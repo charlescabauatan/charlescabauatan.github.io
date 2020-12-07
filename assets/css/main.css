@@ -1810,7 +1810,7 @@ input, select, textarea {
 			white-space: nowrap;
 			display: inline-block;
 			position: relative;
-			animation-duration: 16s;
+			animation-duration: 15s;
 			animation-timing-function: steps(25, end);
 			animation-iteration-count: infinite;
 			/* border: 1px solid red; */
@@ -1830,7 +1830,7 @@ input, select, textarea {
 			  width: 0;
 			}
 			60%, 90% {
-			  width: 15em;
+			  width: 11.2em;
 			}
 		}
 
@@ -3355,6 +3355,13 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+		/* main */
+
+		#one .image.main .title.name {
+			font-size: 16px;
+			padding: 8px;
+		}
+
 		/* List */
 
 			ul.actions {
@@ -3393,6 +3400,8 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
+
+
 
 		/* Button */
 
